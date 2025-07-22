@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CONTADOR INTERACTIVO</title>
+</head>
+<body>
+
+  <h1>CONTADOR:</h1>
+  <div id="contador" style="font-size: 100px; color: rgb(177, 31, 31);">0</div>
+
+  <button onclick="INCREMENTAR()">INCREMENTAR</button>
+  <button onclick="DECREMENTAR()">DECREMENTAR</button>
+
+  <script>
+    let valor = 0;
+
+    function actualizarContador() {
+      const contador = document.getElementById("contador");
+      contador.textContent = valor;
+
+      
+    }
+
+    function INCREMENTAR() {
+      valor++;
+      actualizarContador();
+    }
+
+    function DECREMENTAR() {
+      valor--;
+      actualizarContador();
+    }
+  </script>
+
+</body>
+</html>
